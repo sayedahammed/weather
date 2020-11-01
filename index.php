@@ -34,7 +34,7 @@ $data = Weather::getWeather();
                                <img src="<?= $data['condition_img'] ?>" alt="Overcast">
                            </div>
                            <div id="temp">
-                               <h1><?= $data['temp'] ?><sup id="tempScale">°C</sup></h1>
+                               <h1><?= $data['temp'] ?><sup id="tempScale">&#8451;</sup></h1>
                            </div>
                        </div>
                        <div class="metaInfo text-black-50">
