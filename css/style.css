@@ -40,4 +40,15 @@ h2, h3, p {
 }
 .metaInfo {
     margin-top: 5px;
+    padding-left: 60px;
+}
+
+@media (max-width: 768px) {
+    .metaInfo {
+        margin-top: 5px;
+        padding-left: 10px;
+    }
+    .pt-1 {
+        display: initial;
+    }
 }

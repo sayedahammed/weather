@@ -23,15 +23,13 @@ $data = Weather::getWeather();
        <div class="col-md-6 mt-3">
            <div class="card">
                <div class="card-body">
-                   <div class="row">
-                       <div class="col-md-12 text-black-50">
-                           <p id="loc"><?= $data['location'] ?></p>
-                           <p id="lastUpdated"><?= $data['time'] ?></p>
-                           <p id="condition"><?= $data['condition'] ?></p>
-                       </div>
+                   <div class="text-black-50">
+                       <h4 id="loc"><?= $data['location'] ?></h4>
+                       <p id="lastUpdated"><?= $data['time'] ?></p>
+                       <p id="condition"><?= $data['condition'] ?></p>
                    </div>
-                   <div class="row pt-1">
-                       <div class="col-md-6 tmpWrapper">
+                   <div class="d-flex pt-1">
+                       <div class="tmpWrapper">
                            <div id="conditionImg">
                                <img src="<?= $data['condition_img'] ?>" alt="Overcast">
                            </div>
@@ -39,7 +37,7 @@ $data = Weather::getWeather();
                                <h1><?= $data['temp'] ?><sup id="tempScale">°C</sup></h1>
                            </div>
                        </div>
-                       <div class="col-md-6 metaInfo text-black-50">
+                       <div class="metaInfo text-black-50">
                            <p>Precipitation: <?= $data['precip'] ?> %</p>
                            <p>Humidity: <?= $data['humidity'] ?> %</p>
                            <p>Wind: <?= $data['wind'] ?> kph</p>
